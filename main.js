@@ -37,6 +37,8 @@ const api = {
     hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
   }
   
+  // build date for UI
+
   function dateBuilder (d) {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -45,6 +47,6 @@ const api = {
     let date = d.getDate();
     let month = months[d.getMonth()];
     let year = d.getFullYear();
-  
+    
     return `${day} ${date} ${month} ${year}`;
   }
